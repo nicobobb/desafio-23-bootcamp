@@ -26,7 +26,9 @@ const Home: React.FC = () => {
 
     return (
         <div className="text-center bg-white rounded-md max-w-xl mx-auto my-8 py-8">
-            <h1 className="text-orange-300 font-semibold">Lista de Tareas</h1>
+            <h1 className="text-orange-300 font-semibold text-2xl">
+                Lista de Tareas
+            </h1>
             <TaskForm addTask={addTask} />
             <TaskList tasks={tasks} deleteTask={deleteTask} />
         </div>
