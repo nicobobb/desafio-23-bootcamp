@@ -21,12 +21,16 @@ const TaskForm: React.FC<TaskProps> = ({ addTask }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form
+            onSubmit={handleSubmit}
+            className="my-[40px] flex align-middle justify-center"
+        >
             <input
                 type="text"
                 placeholder="Ingrese una nueva tarea"
                 value={taskText}
                 onChange={(e) => setTaskText(e.target.value)}
+                className="border bg-[#fff7ed] p-5"
             />
             <button>
                 <IoMdAddCircleOutline color="green" size={28} type="submit" />

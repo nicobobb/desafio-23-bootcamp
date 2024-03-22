@@ -7,7 +7,7 @@ interface TaskListProps {
 
 const TaskList: React.FC<TaskListProps> = ({ tasks, deleteTask }) => {
     return (
-        <ul>
+        <ul className="w-[300px] m-auto">
             {tasks.map((task) => (
                 <li key={task.id}>
                     {task.text}
